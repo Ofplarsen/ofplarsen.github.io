@@ -1,0 +1,179 @@
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	margin: 0;
+	padding: 0;
+	background: #121212;
+	color: #e0e0e0;
+}
+.container {
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+header {
+	background: #1f1f1f;
+	color: #e0e0e0;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #1f7a1f 3px solid;
+}
+header a {
+	color: #e0e0e0;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+header ul {
+	padding: 0;
+	list-style: none;
+}
+header li {
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+header #branding {
+	float: left;
+}
+header #branding h1 {
+	margin: 0;
+}
+header nav {
+	float: right;
+	margin-top: 10px;
+}
+.showcase {
+	min-height: 400px;
+	background: #1f1f1f;
+	color: #e0e0e0;
+	text-align: center;
+	padding-top: 100px;
+}
+.showcase h1 {
+	font-size: 55px;
+	margin-top: 0;
+}
+.section {
+	padding: 20px 0;
+	border-bottom: #333 1px solid;
+}
+.section h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+.section .container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.card {
+	background: #1f1f1f;
+	border: #333 1px solid;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	width: 30%;
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: center;
+	color: #e0e0e0;
+}
+.card img {
+	max-width: 100%;
+}
+.footer {
+	padding: 20px;
+	text-align: center;
+	background: #1f1f1f;
+	color: #e0e0e0;
+}
+form div {
+	margin-bottom: 15px;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+	width: 100%;
+	padding: 10px;
+	margin: 5px 0;
+	border: 1px solid #333;
+	background: #333;
+	color: #e0e0e0;
+}
+input[type="submit"] {
+	background: #1f7a1f;
+	color: #e0e0e0;
+	border: 0;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background: #155615;
+}
+a {
+	color: grey; /* default link color */
+	text-decoration: none; /* remove underline */
+}
+
+a:hover {
+	color: white; /* color on hover */
+}
+.publications {
+	background: #1f1f1f;
+	color: #e0e0e0;
+	text-align: center;
+	padding: 50px 0;
+}
+.publications h2 {
+	margin-bottom: 20px;
+}
+.publications .container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.publication {
+	background: #333;
+	border: #1f7a1f 1px solid;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	width: 45%;
+	margin-bottom: 20px;
+	padding: 20px;
+	text-align: center;
+	color: #e0e0e0;
+}
+.publication-list {
+    list-style: none;
+    padding: 0;
+}
+
+.publication-list li {
+    margin-bottom: 20px;
+}
+
+.publication-list li a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-weight: bold; /* Optional: Make the publication titles bold */
+}
+
+.publication-list li p {
+    color: #ccc;
+    margin-top: 5px; /* Add space between the title/link and the description */
+}
+
+.publication-list li a:hover {
+    text-decoration: underline;
+}
+
+.contact-links {
+	margin-top: 20px;
+	text-align: center;
+}
+.contact-links a {
+	margin-right: 20px;
+	color: #e0e0e0;
+	text-decoration: none;
+}
+.contact-links a:last-child {
+	margin-right: 0;
+}
