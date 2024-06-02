@@ -177,3 +177,19 @@ a:hover {
 .contact-links a:last-child {
 	margin-right: 0;
 }
+.cv-section {
+	text-align: center;
+}
+.cv-section a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #1f7a1f;
+    color: #e0e0e0;
+    text-decoration: none;
+    border-radius: 5px;
+    #line-height: 1.5;
+}
+.cv-section a:hover {
+	background: #155615;
+}
