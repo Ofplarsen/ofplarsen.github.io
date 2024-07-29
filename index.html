@@ -4,59 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olav Finne Præsteng Larsen</title>
-	<link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #1E1E1E;
+            color: #D4D4D4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #61AFEF;
+        }
+
+        a {
+            color: #98C379;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        .section-title {
+            border-bottom: 1px solid #61AFEF;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .contact-info, .other-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .info-item {
+            margin-bottom: 10px;
+        } 
+    </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Ofplarsen</h1>
+    <div class="container">
+        <h1>Olav Finne Præsteng Larsen</h1>
+        <div class="contact-info">
+            <div class="info-item">
+                <strong>Email:</strong> <a href="mailto:ofplarsen@gmail.com">ofplarsen@gmail.com</a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                </ul>
-            </nav>
+            <div class="info-item">
+                <strong>GitHub:</strong> <a href="https://github.com/Ofplarsen" target="_blank">github.com/Ofplarsen</a>
+            </div>
+            <div class="info-item">
+                <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ofplarsen" target="_blank">linkedin.com/in/ofplarsen</a>
+            </div>
         </div>
-    </header>
 
-    <section class="showcase" id="home">
-        <div class="container">
-            <h1>Welcome to My Portfolio - WIP</h1>
-            <p>Discover my work and projects</p>
-			<!--<img src="profile.jpeg" alt="Welcome Image">-->
-        </div>
-    </section>
-
-    <section class="section" id="about">
-        <div class="container">
-            <h2>About Me</h2>
-			<p>Hello! I'm Olav, a student at NTNU studying MSc in Computer Science, with a main focus on Deep Learning, Machine Learning, and AI in general.</p>
-        </div>
-    </section>
-
-    <section class="publications" id="publications">
-        <div class="container">
-            <h2>Publications</h2>
-            <ul class="publication-list">
+        <section id="education">
+            <h2 class="section-title">Education</h2>
+            <ul>
                 <li>
-                    <a href="https://www.frontiersin.org/articles/10.3389/fnhum.2024.1347974">Larsen, Olav Finne Præsteng et al. (2024) ‘A method for synchronized use of EEG and eye tracking in fully immersive VR’, Frontiers in Human Neuroscience, 18.</a>
-                    <p>A brief description of the publication goes here. It can include details about what was done, key findings, etc.</p>
+                    <strong>NTNU</strong> - <em>Bachelor’s Degree in Computer Science</em> <br>
+                    08.2020 - 06.2023
                 </li>
-                <!-- Add more publications as list items -->
+                <li>
+                    <strong>NTNU</strong> - <em>Master’s Degree in Computer Science: Artificial Intelligence</em> <br>
+                    08.2023 - Present
+                </li>
             </ul>
-        </div>
-    </section>
+        </section>
 
-	<footer class="footer">
-		<div class="contact-links">
-			<a href="https://github.com/Ofplarsen/">Github</a>
-			<a href="https://www.linkedin.com/in/ofplarsen/">LinkedIn</a>
-			<a href="mailto:ofplarsen@gmail.com">Ofplarsen@gmail.com</a>
-		</div>
-    </footer>
+        <section id="research-experience">
+            <h2 class="section-title">Research Experience</h2>
+            <ul>
+				<li>
+                    <strong>Summer Research Intern, SINTEF Digital</strong> <br>
+					<em>Summer 2024</em> <br><br>
+                    Worked a summer internship in the SINTEF project of SynthAir, utilizing deep learning to generate synthetic flight trajectories from real data.
+                    <ul>
+                        <li>Implemented Conditional support for generative deep learning models such as Variational Auto Encoders (VAEs) and diffusion models to generate synthetic flight trajectories.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Research Assistant, NTNU Vizlab</strong> <br>
+					<em>08.2023 – Present</em> <br><br>
+                    Responsibilities include maintaining equipment and assisting with research experiments.
+                    <ul>
+                        <li>Assisted in developing pipeline and software for a research experiment comparing proprioception in VR and real-world environments. Synchronized and analyzed EEG, 3D joint positions from Qualisys Motion Capture, and camera streams, used for assessing regular cameras' accuracy in capturing 3D joints against Qualisys ground truth.</li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </section>
+
+        <section id="work-experience">
+            <h2 class="section-title">Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>Summer Intern, DIPS AS</strong> <br>
+                    <em>Summer 2023</em> <br>
+                    Developed a common data extraction endpoint using GraphQL, allowing multiple platforms (web, desktop, mobile) to retrieve the same data with the same logic from the same endpoint. Technologies used: C#, dotnet, helm, Kubernetes, Vue.
+                </li>
+                <li>
+                    <strong>Summer Intern, DIPS AS</strong> <br>
+                    <em>Summer 2022</em> <br>
+                    Developed frontend and backend for a rule engine for healthcare professionals in DIPS. Technologies used: C# backend, Blazor frontend, as well as dotnet, Kubernetes, and helm for CI/CD.
+                </li>
+            </ul>
+        </section>
+
+        <section id="publication">
+            <h2 class="section-title">Publication</h2>
+            <ul>
+                <li>
+                    <a href="https://www.frontiersin.org/articles/10.3389/fnhum.2024.1347974" target="_blank">Larsen, Olav Finne Præsteng et al. (2024) ‘A method for synchronized use of EEG and eye tracking in fully immersive VR’, Frontiers in Human Neuroscience, 18.</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="teaching-experience">
+            <h2 class="section-title">Teaching Experience</h2>
+            <ul>
+                <li>
+                    <strong>Student Assistant, NTNU</strong> <br>
+                    <em>08.2021 – 12.2024</em> <br>
+                    Positions included guiding students and assessing their lab assignments 8 hours a week during lab hours for the following courses:
+					<br><br>
+
+                    <ul>
+                        <li>IDATT2502 - Applied machine learning with project (08.2024-12.2024)</li>
+                        <li>IDATT2105 - Fullstack (01.2023-06.2023)</li>
+                        <li>IDATT1001 - Programming 1 (08.2022-12.2022)</li>
+                        <li>IDATT2001 - Programming 2 (01.2022-06.2022)</li>
+                        <li>IDATT1001 - Programming 1 (08.2021-12.2021)</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+    </div>
 </body>
 </html>
+
 
